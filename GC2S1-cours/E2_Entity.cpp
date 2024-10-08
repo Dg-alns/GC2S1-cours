@@ -3,7 +3,7 @@
 #include "E2_Entity.h"
 
 Entity::Entity() {
-	vector2.Set_x(2.9);
+	vector2.Set_x(2.4);
 	vector2.Set_y(3.2);
 }
 void Entity::Set_x(float _nb) {

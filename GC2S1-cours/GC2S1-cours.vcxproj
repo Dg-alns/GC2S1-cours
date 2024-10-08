@@ -127,11 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cours\Entity.cpp" />
+    <ClCompile Include="cours\Main.cpp" />
+    <ClCompile Include="cours\Player.cpp" />
+    <ClCompile Include="cours\Point.cpp" />
+    <ClCompile Include="E2_Entity.cpp" />
+    <ClCompile Include="E1_Vector2.cpp" />
     <ClCompile Include="GC2S1-cours.cpp" />
-    <ClCompile Include="Point.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Point.h" />
+    <ClInclude Include="cours\Entity.h" />
+    <ClInclude Include="cours\IAlive.h" />
+    <ClInclude Include="cours\Player.h" />
+    <ClInclude Include="cours\Point.h" />
+    <ClInclude Include="E2_Entity.h" />
+    <ClInclude Include="E1_Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

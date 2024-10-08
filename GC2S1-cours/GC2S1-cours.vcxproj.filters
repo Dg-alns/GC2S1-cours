@@ -13,18 +13,69 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers sources\cours">
+      <UniqueIdentifier>{270bf750-51e8-4f3a-80b2-1be24acff478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\cours">
+      <UniqueIdentifier>{63ad0138-141e-47c2-a8ed-291a648c8ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo1">
+      <UniqueIdentifier>{69c6b2fb-42b8-4df3-be64-5baa2967338c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo1">
+      <UniqueIdentifier>{51644fe5-8166-4642-8f97-5d325e8ca8c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo2">
+      <UniqueIdentifier>{668fec21-5a77-42a4-9d1e-c28618538103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo2">
+      <UniqueIdentifier>{7c3ba94d-e1f7-4f4c-a2cc-ad8995f1a505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo3">
+      <UniqueIdentifier>{54102968-77a7-44ab-b5fd-d448186afc9a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GC2S1-cours.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Point.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="cours\Entity.cpp">
+      <Filter>Fichiers sources\cours</Filter>
+    </ClCompile>
+    <ClCompile Include="cours\Main.cpp">
+      <Filter>Fichiers sources\cours</Filter>
+    </ClCompile>
+    <ClCompile Include="cours\Player.cpp">
+      <Filter>Fichiers sources\cours</Filter>
+    </ClCompile>
+    <ClCompile Include="cours\Point.cpp">
+      <Filter>Fichiers sources\cours</Filter>
+    </ClCompile>
+    <ClCompile Include="E1_Vector2.cpp">
+      <Filter>Fichiers sources\Exo1</Filter>
+    </ClCompile>
+    <ClCompile Include="E2_Entity.cpp">
+      <Filter>Fichiers sources\Exo2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Point.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="cours\Entity.h">
+      <Filter>Fichiers d%27en-tête\cours</Filter>
+    </ClInclude>
+    <ClInclude Include="cours\IAlive.h">
+      <Filter>Fichiers d%27en-tête\cours</Filter>
+    </ClInclude>
+    <ClInclude Include="cours\Point.h">
+      <Filter>Fichiers d%27en-tête\cours</Filter>
+    </ClInclude>
+    <ClInclude Include="cours\Player.h">
+      <Filter>Fichiers d%27en-tête\cours</Filter>
+    </ClInclude>
+    <ClInclude Include="E1_Vector2.h">
+      <Filter>Fichiers d%27en-tête\Exo1</Filter>
+    </ClInclude>
+    <ClInclude Include="E2_Entity.h">
+      <Filter>Fichiers d%27en-tête\Exo2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

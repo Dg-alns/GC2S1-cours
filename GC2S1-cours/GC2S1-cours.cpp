@@ -2,67 +2,31 @@
 #include <string>
 #include <vector>
 
-#include "Point.h"
+#include "E1_Vector2.h"
+#include "E2_Entity.h"
 
 int main(int argc, const char* argv[])
 {
-    Point point;
-    int nb;
-
+    //Exercice 1
+    /*Vector2 vector2;
+    float nb;
+    
     std::cout << "Saisir un float: ";
     std::cin >> nb;
-
-    std::cout << std::endl << "Saisir un float: ";
+    vector2.Set_x(nb);
+    
+    std::cout << "Saisir un float: ";
     std::cin >> nb;
+    vector2.Set_y(nb);
 
-    std::cout << std::endl << "Saisir un float: ";
-    std::cin >> nb;
+    std::cout << "x: " << vector2.Get_x() << ", y: " << vector2.Get_y() << std::endl;*/
 
-    std::string value = point.ToString();
-
-    std::cout << value << std::endl;
-
-    /*
-    std::cout << "Hello World!" << std::endl;
-    int nb;
-    std::vector<int> tb_int;
-
-    std::cout << "Saisir un int" << std::endl;
-    std::cin >> nb;
-    tb_int.push_back(nb);
-
-    while (true) {
-        system("cls");
-        for (int i(0); i < tb_int.size(); i++) {
-            std::cout << tb_int[i] << " ";
-
-        }
-        std::cout << std::endl <<"Saisir un int" << std::endl;
-        std::cin >> nb;
-        tb_int.push_back(nb);
-
-    }*/
+    //Exercice 2
+    
+    Entity entity;
+    entity.Position();
 
 
-
-
-
-
-
-
-    /*
-    srand(time(NULL));
-    std::cout << "Hello World!" << std::endl;
-    int nb;
-    std::vector<int> tb_int;
-
-    for (int size(0); size < 10; size++) {
-        int rdm_nb(std::rand() % 100);
-        tb_int.push_back(rdm_nb);
-    }
-    for (int i(0); i < tb_int.size(); i++) {
-        std::cout << tb_int[i] << " ";
-    }*/
 
     return 0;
 }

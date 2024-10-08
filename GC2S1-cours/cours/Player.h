@@ -1,25 +1,25 @@
+////
+////  Player.h
+////  point
+////
+////  Created by Maxine Constantinian on 08/10/2024.
+////
 //
-//  Player.h
-//  point
+//#ifndef PLAYER_H__
+//#define PLAYER_H__
 //
-//  Created by Maxine Constantinian on 08/10/2024.
+//#include "Entity.h"
+//#include "IAlive.h"
 //
-
-#ifndef PLAYER_H__
-#define PLAYER_H__
-
-#include "Entity.h"
-#include "IAlive.h"
-
-class Player : public Entity, public IAlive {
-    int life;
-
-public:
-    Player();
-    void sayHello() override;
-    
-    bool IsAlive() override;
-    void TakeDamage(int _dmg) override;
-};
-
-#endif
+//class Player : public Entity, public IAlive {
+//    int life;
+//
+//public:
+//    Player();
+//    void sayHello() override;
+//    
+//    bool IsAlive() override;
+//    void TakeDamage(int _dmg) override;
+//};
+//
+//#endif

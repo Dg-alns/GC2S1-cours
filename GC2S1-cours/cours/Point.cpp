@@ -1,21 +1,21 @@
+////
+////  Point.cpp
+////  point
+////
+////  Created by Maxine Constantinian on 07/10/2024.
+////
 //
-//  Point.cpp
-//  point
+//#include <sstream>
+//#include "Point.h"
 //
-//  Created by Maxine Constantinian on 07/10/2024.
+//Point::Point(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {
 //
-
-#include <sstream>
-#include "Point.h"
-
-Point::Point(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {
-
-}
-
-std::string Point::ToString() {
-    std::stringstream stream;
-    
-    stream << "Point: x: " << x << ", y: " << y << ", z: " << z;
-    
-    return stream.str();
-}
+//}
+//
+//std::string Point::ToString() {
+//    std::stringstream stream;
+//    
+//    stream << "Point: x: " << x << ", y: " << y << ", z: " << z;
+//    
+//    return stream.str();
+//}

@@ -34,6 +34,24 @@
     <Filter Include="Fichiers sources\Exo3">
       <UniqueIdentifier>{54102968-77a7-44ab-b5fd-d448186afc9a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo3">
+      <UniqueIdentifier>{47c770ad-30cb-42c3-bd73-87b22adedc39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo4">
+      <UniqueIdentifier>{37a279c4-23e3-418a-9a3e-fb25134d8312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo4">
+      <UniqueIdentifier>{e01a3677-a491-4ee5-9147-9a3572b3658c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo5">
+      <UniqueIdentifier>{4a9bccd5-ef71-4a2a-91f4-532f120cac7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo6">
+      <UniqueIdentifier>{6fbe84e4-c864-428d-a9e7-d430ec1d1ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo6">
+      <UniqueIdentifier>{3994147e-c044-4369-abc4-dd09ac924b50}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GC2S1-cours.cpp">
@@ -57,6 +75,15 @@
     <ClCompile Include="E2_Entity.cpp">
       <Filter>Fichiers sources\Exo2</Filter>
     </ClCompile>
+    <ClCompile Include="E3_AMovable.cpp">
+      <Filter>Fichiers sources\Exo3</Filter>
+    </ClCompile>
+    <ClCompile Include="E4_Alive.cpp">
+      <Filter>Fichiers sources\Exo4</Filter>
+    </ClCompile>
+    <ClCompile Include="E6_StaticObject.cpp">
+      <Filter>Fichiers sources\Exo6</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cours\Entity.h">
@@ -76,6 +103,18 @@
     </ClInclude>
     <ClInclude Include="E2_Entity.h">
       <Filter>Fichiers d%27en-tête\Exo2</Filter>
+    </ClInclude>
+    <ClInclude Include="E3_AMovable.h">
+      <Filter>Fichiers d%27en-tête\Exo3</Filter>
+    </ClInclude>
+    <ClInclude Include="E4_Alive.h">
+      <Filter>Fichiers d%27en-tête\Exo4</Filter>
+    </ClInclude>
+    <ClInclude Include="E4_IAttacker.h">
+      <Filter>Fichiers d%27en-tête\Exo5</Filter>
+    </ClInclude>
+    <ClInclude Include="E6_StaticObject.h">
+      <Filter>Fichiers d%27en-tête\Exo6</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

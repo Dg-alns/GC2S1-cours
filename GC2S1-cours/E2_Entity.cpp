@@ -2,26 +2,15 @@
 
 #include "E2_Entity.h"
 
-Entity::Entity() {
-	vector2.Set_x(2.2);
-	vector2.Set_y(3.2);
-}
-void Entity::Set_x(float _nb) {
-	vector2.Set_x(_nb);
+Entity::Entity(float _x, float _y) : position(_x, _y) {
+
 }
 
-void Entity::Set_y(float _nb) {
-	vector2.Set_y(_nb);
+void Entity::Set_position(float _x, float _y) {
+	position.Set_x(_x);
+	position.Set_y(_y);
 }
 
-void Entity::Get_x() {
-	vector2.Get_x();
-}
-
-void Entity::Get_y() {
-	vector2.Get_y();
-}
-
-void Entity::Position() {
-	std::cout << vector2.Get_x() << " " << vector2.Get_y();
+Vector2 Entity::Get_position() {
+	return position;
 }

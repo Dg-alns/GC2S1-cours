@@ -9,7 +9,7 @@
 class Vector2 
 {
 public:
-	Vector2();
+	Vector2(float, float);
 	void Set_x(float _nb);
 	void Set_y(float _nb);
 	float Get_x();

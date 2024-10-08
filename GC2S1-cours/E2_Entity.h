@@ -11,15 +11,12 @@
 
 class Entity 
 {
-	Vector2 vector2;
+	Vector2 position;
 public:
-	Entity();
-	virtual void Set_x(float _nb);
-	virtual void Set_y(float _nb);
-	virtual void Get_x();
-	virtual void Get_y();
+	Entity(float, float);
+	virtual void Set_position(float, float);
+	virtual Vector2 Get_position();
 	
-	void Position();
 };
 
 #endif // !ENTITY_H__

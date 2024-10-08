@@ -1,24 +1,24 @@
+////
+////  Point.h
+////  point
+////
+////  Created by Maxine Constantinian on 07/10/2024.
+////
 //
-//  Point.h
-//  point
+//#ifndef POINT_H__
+//#define POINT_H__
 //
-//  Created by Maxine Constantinian on 07/10/2024.
+//#include <string>
 //
-
-#ifndef POINT_H__
-#define POINT_H__
-
-#include <string>
-
-class Point {
-public:
-    float x;
-    float y;
-    float z;
-    
-    Point(float, float, float);
-    
-    std::string ToString();
-};
-
-#endif
+//class Point {
+//public:
+//    float x;
+//    float y;
+//    float z;
+//    
+//    Point(float, float, float);
+//    
+//    std::string ToString();
+//};
+//
+//#endif

@@ -52,6 +52,30 @@
     <Filter Include="Fichiers sources\Exo6">
       <UniqueIdentifier>{3994147e-c044-4369-abc4-dd09ac924b50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo7">
+      <UniqueIdentifier>{054182a9-dc6f-490b-8861-243a96f4ea71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo7">
+      <UniqueIdentifier>{8b24cb5b-07e9-4539-b78c-e6ec14e8f82a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo8">
+      <UniqueIdentifier>{ed77376e-2fe8-4e83-872b-503ed02c55ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo8">
+      <UniqueIdentifier>{7136aa5a-2a96-49eb-95e7-aa6d7e23036a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo9">
+      <UniqueIdentifier>{e26e910e-4eba-486a-88a4-70ecca7468cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo9">
+      <UniqueIdentifier>{3725b865-1d46-4503-85fd-86e30ebc21d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo11">
+      <UniqueIdentifier>{de6d6553-afc1-46f3-ab1b-83df8b0cce46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo11">
+      <UniqueIdentifier>{50972216-e733-4547-a7c7-4da28902505a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GC2S1-cours.cpp">
@@ -84,6 +108,18 @@
     <ClCompile Include="E6_StaticObject.cpp">
       <Filter>Fichiers sources\Exo6</Filter>
     </ClCompile>
+    <ClCompile Include="E7_BreakableObject.cpp">
+      <Filter>Fichiers sources\Exo7</Filter>
+    </ClCompile>
+    <ClCompile Include="E8_Mob.cpp">
+      <Filter>Fichiers sources\Exo8</Filter>
+    </ClCompile>
+    <ClCompile Include="E9_Player.cpp">
+      <Filter>Fichiers sources\Exo9</Filter>
+    </ClCompile>
+    <ClCompile Include="E11_World.cpp">
+      <Filter>Fichiers sources\Exo11</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cours\Entity.h">
@@ -110,11 +146,23 @@
     <ClInclude Include="E4_Alive.h">
       <Filter>Fichiers d%27en-tête\Exo4</Filter>
     </ClInclude>
-    <ClInclude Include="E4_IAttacker.h">
+    <ClInclude Include="E5_IAttacker.h">
       <Filter>Fichiers d%27en-tête\Exo5</Filter>
     </ClInclude>
     <ClInclude Include="E6_StaticObject.h">
       <Filter>Fichiers d%27en-tête\Exo6</Filter>
+    </ClInclude>
+    <ClInclude Include="E7_BreakableObject.h">
+      <Filter>Fichiers d%27en-tête\Exo7</Filter>
+    </ClInclude>
+    <ClInclude Include="E8_Mob.h">
+      <Filter>Fichiers d%27en-tête\Exo8</Filter>
+    </ClInclude>
+    <ClInclude Include="E9_Player.h">
+      <Filter>Fichiers d%27en-tête\Exo9</Filter>
+    </ClInclude>
+    <ClInclude Include="E11_World.h">
+      <Filter>Fichiers d%27en-tête\Exo11</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -11,8 +11,8 @@
 
 class Entity 
 {
-	Vector2 position;
 public:
+	Vector2 position;
 	Entity(float, float);
 	virtual void Set_position(float, float);
 	virtual Vector2 Get_position();

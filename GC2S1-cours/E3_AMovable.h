@@ -16,9 +16,9 @@
 
 class AMovable
 {
+public:
 	float vitesse;
 	Vector2 direction;
-public:
 	AMovable(float, float, float);
 	virtual void Set_Direction(float, float);
 	virtual void Set_Speed(float);

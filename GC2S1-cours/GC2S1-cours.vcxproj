@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="E11_World.cpp" />
     <ClCompile Include="E4_Alive.cpp" />
     <ClCompile Include="cours\Entity.cpp" />
     <ClCompile Include="cours\Main.cpp" />
@@ -136,9 +137,14 @@
     <ClCompile Include="E1_Vector2.cpp" />
     <ClCompile Include="E3_AMovable.cpp" />
     <ClCompile Include="E6_StaticObject.cpp" />
+    <ClCompile Include="E7_BreakableObject.cpp" />
+    <ClCompile Include="E8_Mob.cpp" />
+    <ClCompile Include="E9_Player.cpp" />
     <ClCompile Include="GC2S1-cours.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="E11_World.h" />
+    <ClInclude Include="E7_BreakableObject.h" />
     <ClInclude Include="E4_Alive.h" />
     <ClInclude Include="cours\Entity.h" />
     <ClInclude Include="cours\IAlive.h" />
@@ -147,8 +153,10 @@
     <ClInclude Include="E2_Entity.h" />
     <ClInclude Include="E1_Vector2.h" />
     <ClInclude Include="E3_AMovable.h" />
-    <ClInclude Include="E4_IAttacker.h" />
+    <ClInclude Include="E5_IAttacker.h" />
     <ClInclude Include="E6_StaticObject.h" />
+    <ClInclude Include="E8_Mob.h" />
+    <ClInclude Include="E9_Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

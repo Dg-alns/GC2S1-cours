@@ -12,7 +12,7 @@
 class IAttacker
 {
 public:
-	virtual void Attack(Alive& cible) = 0;
+	virtual void Attack(Alive* cible) = 0;
 };
 
 #endif // !IATTACKER_H__

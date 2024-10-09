@@ -40,8 +40,8 @@ void World::Step() {
 
 	if (!Dead_Mob)
 	{
-		//directionx = postargetx - posmodx
-		mob->Set_Direction();
-		mob->Deplacement();
+		//directionx = postargetx - posmobx
+		/*mob->Set_Direction();
+		mob->Deplacement();*/
 	}
 }

@@ -9,9 +9,12 @@ void Mob::Take_Damadge(float dmg) {
 	std::cout << "Mob just die" << std::endl;
 }
 
-void Mob::Deplacement() {
-	position.Set_x(position.Get_x() + direction.Get_x() * vitesse);
-	position.Set_y(position.Get_y() + direction.Get_y() * vitesse);
+void Mob::Deplacement(float _target_pos_x, float _target_pos_y) {
+	float distance_x(_target_pos_x - position.Get_x());
+	float distance_y(_target_pos_y - position.Get_y());
+	Set_Direction(distance_x, distance_y);
+	position.Set_x(position.Get_x() + (direction.Get_x() * vitesse));
+	position.Set_y(position.Get_y() + (direction.Get_y() * vitesse));
 
-	std::cout << "Player move to x = " << position.Get_x() << " and y = " << position.Get_y() << std::endl;
+	std::cout << "Mob move to x = " << position.Get_x() << " and y = " << position.Get_y() << std::endl;
 }

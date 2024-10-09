@@ -24,7 +24,7 @@ class Mob : public Entity, public Alive, public AMovable
 public:
 	Mob(float, float, float, float, float, float, float);
 	void Take_Damadge(float) override;
-	void Deplacement() override;
+	void Deplacement(float, float) override;
 };
 
 

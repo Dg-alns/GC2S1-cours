@@ -22,7 +22,7 @@ public:
 	AMovable(float, float, float);
 	virtual void Set_Direction(float, float);
 	virtual void Set_Speed(float);
-	virtual void Deplacement() = 0;
+	virtual void Deplacement(float, float) = 0;
 
 };
 

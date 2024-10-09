@@ -141,6 +141,7 @@
     <ClCompile Include="E8_Mob.cpp" />
     <ClCompile Include="E9_Player.cpp" />
     <ClCompile Include="GC2S1-cours.cpp" />
+    <ClCompile Include="Integer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E11_World.h" />
@@ -157,6 +158,7 @@
     <ClInclude Include="E6_StaticObject.h" />
     <ClInclude Include="E8_Mob.h" />
     <ClInclude Include="E9_Player.h" />
+    <ClInclude Include="Integer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

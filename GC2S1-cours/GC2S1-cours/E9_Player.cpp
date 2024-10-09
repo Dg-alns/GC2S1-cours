@@ -9,7 +9,12 @@ void Player::Take_Damadge(float dmg) {
 	std::cout << "Player just die" << std::endl;
 }
 
-	void Player::Deplacement(Entity & target) {
+<<<<<<< Updated upstream
+void Player::Deplacement() {
+	position.Set_x(position.Get_x() + direction.Get_x() * vitesse);
+	position.Set_y(position.Get_y() + direction.Get_y() * vitesse);
+=======
+void Player::Deplacement(Entity& target) {
 	float distance_x(target.position.Get_x() - position.Get_x());
 	float distance_y(target.position.Get_y() - position.Get_y());
 
@@ -19,10 +24,18 @@ void Player::Take_Damadge(float dmg) {
 
 	position.Set_x(position.Get_x() + k * direction.Get_x());
 	position.Set_y(position.Get_y() + k * direction.Get_y());
+>>>>>>> Stashed changes
 
-		std::cout << "Player move to x = " << position.Get_x() << " and y = " << position.Get_y() << std::endl;
+	std::cout << "Player move to x = " << position.Get_x() << " and y = " << position.Get_y() << std::endl;
 }
-void Player::Attack(Alive & target) {
+
+<<<<<<< Updated upstream
+void Player::Attack(Alive* player) {
+	player->Take_Damadge(10);
+	std::cout << "“Player just attacked." << std::endl;
+=======
+void Player::Attack(Alive& target) {
 	target.Take_Damadge(10);
 	std::cout << "Player just attacked." << std::endl;
+>>>>>>> Stashed changes
 }

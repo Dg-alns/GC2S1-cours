@@ -23,8 +23,12 @@ public:
 	AMovable(float, float, float);
 	virtual void Set_Direction(float, float);
 	virtual void Set_Speed(float);
+<<<<<<< Updated upstream
+	virtual void Deplacement() = 0;
+=======
 	virtual float Get_Speed();
 	virtual void Deplacement(Entity&) = 0;
+>>>>>>> Stashed changes
 
 };
 

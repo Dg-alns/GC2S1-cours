@@ -24,7 +24,11 @@ class Mob : public Entity, public Alive, public AMovable
 public:
 	Mob(float, float, float, float, float, float, float);
 	void Take_Damadge(float) override;
+<<<<<<< Updated upstream
+	void Deplacement() override;
+=======
 	void Deplacement(Entity&) override;
+>>>>>>> Stashed changes
 };
 
 

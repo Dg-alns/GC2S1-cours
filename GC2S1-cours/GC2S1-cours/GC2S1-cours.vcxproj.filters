@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\cours">
+      <UniqueIdentifier>{270bf750-51e8-4f3a-80b2-1be24acff478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\cours">
+      <UniqueIdentifier>{63ad0138-141e-47c2-a8ed-291a648c8ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo1">
+      <UniqueIdentifier>{69c6b2fb-42b8-4df3-be64-5baa2967338c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo1">
+      <UniqueIdentifier>{51644fe5-8166-4642-8f97-5d325e8ca8c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo2">
+      <UniqueIdentifier>{668fec21-5a77-42a4-9d1e-c28618538103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo2">
+      <UniqueIdentifier>{7c3ba94d-e1f7-4f4c-a2cc-ad8995f1a505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo3">
+      <UniqueIdentifier>{54102968-77a7-44ab-b5fd-d448186afc9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo3">
+      <UniqueIdentifier>{47c770ad-30cb-42c3-bd73-87b22adedc39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo4">
+      <UniqueIdentifier>{37a279c4-23e3-418a-9a3e-fb25134d8312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo4">
+      <UniqueIdentifier>{e01a3677-a491-4ee5-9147-9a3572b3658c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo5">
+      <UniqueIdentifier>{4a9bccd5-ef71-4a2a-91f4-532f120cac7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo6">
+      <UniqueIdentifier>{6fbe84e4-c864-428d-a9e7-d430ec1d1ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo6">
+      <UniqueIdentifier>{3994147e-c044-4369-abc4-dd09ac924b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo7">
+      <UniqueIdentifier>{054182a9-dc6f-490b-8861-243a96f4ea71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo7">
+      <UniqueIdentifier>{8b24cb5b-07e9-4539-b78c-e6ec14e8f82a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo8">
+      <UniqueIdentifier>{ed77376e-2fe8-4e83-872b-503ed02c55ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo8">
+      <UniqueIdentifier>{7136aa5a-2a96-49eb-95e7-aa6d7e23036a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo9">
+      <UniqueIdentifier>{e26e910e-4eba-486a-88a4-70ecca7468cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo9">
+      <UniqueIdentifier>{3725b865-1d46-4503-85fd-86e30ebc21d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Exo11">
+      <UniqueIdentifier>{de6d6553-afc1-46f3-ab1b-83df8b0cce46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Exo11">
+      <UniqueIdentifier>{50972216-e733-4547-a7c7-4da28902505a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GC2S1-cours.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="cours\Entity.cpp">
+      <Filter>Fichiers sources\cours</Filter>
+    </ClCompile>
+    <ClCompile Include="cours\Main.cpp">
+      <Filter>Fichiers sources\cours</Filter>
+    </ClCompile>
+    <ClCompile Include="cours\Player.cpp">
+      <Filter>Fichiers sources\cours</Filter>
+    </ClCompile>
+    <ClCompile Include="cours\Point.cpp">
+      <Filter>Fichiers sources\cours</Filter>
+    </ClCompile>
+    <ClCompile Include="E1_Vector2.cpp">
+      <Filter>Fichiers sources\Exo1</Filter>
+    </ClCompile>
+    <ClCompile Include="E2_Entity.cpp">
+      <Filter>Fichiers sources\Exo2</Filter>
+    </ClCompile>
+    <ClCompile Include="E3_AMovable.cpp">
+      <Filter>Fichiers sources\Exo3</Filter>
+    </ClCompile>
+    <ClCompile Include="E4_Alive.cpp">
+      <Filter>Fichiers sources\Exo4</Filter>
+    </ClCompile>
+    <ClCompile Include="E6_StaticObject.cpp">
+      <Filter>Fichiers sources\Exo6</Filter>
+    </ClCompile>
+    <ClCompile Include="E7_BreakableObject.cpp">
+      <Filter>Fichiers sources\Exo7</Filter>
+    </ClCompile>
+    <ClCompile Include="E8_Mob.cpp">
+      <Filter>Fichiers sources\Exo8</Filter>
+    </ClCompile>
+    <ClCompile Include="E9_Player.cpp">
+      <Filter>Fichiers sources\Exo9</Filter>
+    </ClCompile>
+    <ClCompile Include="E11_World.cpp">
+      <Filter>Fichiers sources\Exo11</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cours\Entity.h">
+      <Filter>Fichiers d%27en-tête\cours</Filter>
+    </ClInclude>
+    <ClInclude Include="cours\IAlive.h">
+      <Filter>Fichiers d%27en-tête\cours</Filter>
+    </ClInclude>
+    <ClInclude Include="cours\Point.h">
+      <Filter>Fichiers d%27en-tête\cours</Filter>
+    </ClInclude>
+    <ClInclude Include="cours\Player.h">
+      <Filter>Fichiers d%27en-tête\cours</Filter>
+    </ClInclude>
+    <ClInclude Include="E1_Vector2.h">
+      <Filter>Fichiers d%27en-tête\Exo1</Filter>
+    </ClInclude>
+    <ClInclude Include="E2_Entity.h">
+      <Filter>Fichiers d%27en-tête\Exo2</Filter>
+    </ClInclude>
+    <ClInclude Include="E3_AMovable.h">
+      <Filter>Fichiers d%27en-tête\Exo3</Filter>
+    </ClInclude>
+    <ClInclude Include="E4_Alive.h">
+      <Filter>Fichiers d%27en-tête\Exo4</Filter>
+    </ClInclude>
+    <ClInclude Include="E5_IAttacker.h">
+      <Filter>Fichiers d%27en-tête\Exo5</Filter>
+    </ClInclude>
+    <ClInclude Include="E6_StaticObject.h">
+      <Filter>Fichiers d%27en-tête\Exo6</Filter>
+    </ClInclude>
+    <ClInclude Include="E7_BreakableObject.h">
+      <Filter>Fichiers d%27en-tête\Exo7</Filter>
+    </ClInclude>
+    <ClInclude Include="E8_Mob.h">
+      <Filter>Fichiers d%27en-tête\Exo8</Filter>
+    </ClInclude>
+    <ClInclude Include="E9_Player.h">
+      <Filter>Fichiers d%27en-tête\Exo9</Filter>
+    </ClInclude>
+    <ClInclude Include="E11_World.h">
+      <Filter>Fichiers d%27en-tête\Exo11</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

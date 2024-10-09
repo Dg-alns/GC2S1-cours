@@ -10,8 +10,12 @@ void Mob::Take_Damadge(float dmg) {
 	std::cout << "Mob just die" << std::endl;
 }
 
-
-void Mob::Deplacement(Entity & target) {
+<<<<<<< Updated upstream
+void Mob::Deplacement() {
+	position.Set_x(position.Get_x() + direction.Get_x() * vitesse);
+	position.Set_y(position.Get_y() + direction.Get_y() * vitesse);
+=======
+void Mob::Deplacement(Entity& target) {
 	float distance_x(target.position.Get_x() - position.Get_x());
 	float distance_y(target.position.Get_y() - position.Get_y());
 
@@ -21,6 +25,7 @@ void Mob::Deplacement(Entity & target) {
 
 	position.Set_x(position.Get_x() + k * direction.Get_x());
 	position.Set_y(position.Get_y() + k * direction.Get_y());
+>>>>>>> Stashed changes
 
 	std::cout << "Player move to x = " << position.Get_x() << " and y = " << position.Get_y() << std::endl;
 }

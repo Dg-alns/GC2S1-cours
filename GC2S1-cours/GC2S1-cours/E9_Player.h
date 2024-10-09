@@ -28,8 +28,13 @@ class Player : public Entity, public Alive, public AMovable, public IAttacker
 public:
 	Player(float, float, float, float, float, float, float);
 	void Take_Damadge(float) override;
+<<<<<<< Updated upstream
+	void Deplacement() override;
+	void Attack(Alive* cible) override;
+=======
 	void Deplacement(Entity&) override;
 	void Attack(Alive& cible) override;
+>>>>>>> Stashed changes
 };
 
 #endif // !PLAYER_H__

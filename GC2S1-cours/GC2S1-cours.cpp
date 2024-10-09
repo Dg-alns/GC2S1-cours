@@ -22,7 +22,11 @@ int main(int argc, const char* argv[]){
     World world;
 
     world.Init();
-    world.Step();
+    for (int i(0); i < 5; i++)
+    {
+        world.Step();
+    }
+    
 
 
 

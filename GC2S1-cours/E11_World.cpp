@@ -7,7 +7,7 @@ World::World() {
 
 void World::Init() {
 	StaticObject* Sobject = new StaticObject(0, 0);
-	BreakableObject* Bobject = new BreakableObject(10, 0, 1, 1);
+	BreakableObject* Bobject = new BreakableObject(12, 0, 1, 1);
 	Mob* mob = new Mob(0, 10, 20, 20, 0, 0, 0.5);
 	Player* player = new Player(10, 10, 10, 10, 0, 0, 1);
 

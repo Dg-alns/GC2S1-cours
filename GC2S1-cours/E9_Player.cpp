@@ -5,7 +5,8 @@ Player::Player(float _pos_x, float _pos_y, float _max_vie, float _vie, float _di
 	std::cout << "Player just created at x = " << _pos_x << " and y = " << _pos_y << " with " << _max_vie << " life with direction x = " << _dir_x << " and y = " << _dir_y << std::endl;
 }
 
-void Player::Take_Damadge(float dmg) {
+void Player::Take_Damadge(float _dmg) {
+	vie -= _dmg;
 	std::cout << "Player just die" << std::endl;
 }
 
@@ -13,17 +14,13 @@ void Player::Deplacement(Entity& target) {
 	float distance_x(target.position.Get_x() - position.Get_x()); 
 	float distance_y(target.position.Get_y() - position.Get_y());
 
-	/*if (target.position.Get_x() == 0 || position.Get_x() == 0) {
-		distance_x *= -1;
-	}
-
-	if (target.position.Get_y() == 0 || position.Get_y() == 0) {
-		distance_y *= -1;
-	}*/
-
 	Set_Direction(distance_x, distance_y);
 
 	float k(Get_Speed() / (direction.Get_x() + direction.Get_y())); 
+
+	if (direction.Get_x() + direction.Get_y() < 0) {
+		k *= -1;
+	}
 
 	position.Set_x(position.Get_x() + k * direction.Get_x());
 	position.Set_y(position.Get_y() + k * direction.Get_y());

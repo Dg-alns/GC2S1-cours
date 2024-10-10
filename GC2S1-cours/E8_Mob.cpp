@@ -5,8 +5,8 @@ Mob::Mob(float _pos_x, float _pos_y, float _max_vie, float _vie, float _dir_x, f
 	std::cout << "Mob just created at x = " << _pos_x << " and y = " << _pos_y << " with " << _max_vie << " life with direction x = " << _dir_x << " and y = " << _dir_y << std::endl;
 }
 
-void Mob::Take_Damadge(float dmg) {
-	vie -= dmg;
+void Mob::Take_Damadge(float _dmg) {
+	vie -= _dmg;
 	std::cout << "Mob just die" << std::endl;
 }
 
@@ -18,6 +18,10 @@ void Mob::Deplacement(Entity & target) {
 	Set_Direction(distance_x, distance_y);
 
 	float k(Get_Speed() / (direction.Get_x() + direction.Get_y()));
+
+	if (direction.Get_x() + direction.Get_y() < 0) {
+		k *= -1;
+	}
 
 	position.Set_x(position.Get_x() + k * direction.Get_x());
 	position.Set_y(position.Get_y() + k * direction.Get_y());

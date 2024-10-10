@@ -26,11 +26,13 @@
 
 class World
 {
+	bool endSimulation;
 	std::vector<Entity*> vEntity;
 public:
 	World();
 	void Init();
-	bool Step(bool, bool);
+	void Step();
+	bool Isfinishe();
 
 };
 

@@ -9,16 +9,24 @@ void Player::Take_Damadge(float dmg) {
 	std::cout << "Player just die" << std::endl;
 }
 
-void Player::Deplacement(Entity & target) {
-float distance_x(target.position.Get_x() - position.Get_x());
-float distance_y(target.position.Get_y() - position.Get_y());
+void Player::Deplacement(Entity& target) {
+	float distance_x(target.position.Get_x() - position.Get_x()); 
+	float distance_y(target.position.Get_y() - position.Get_y());
 
-Set_Direction(distance_x, distance_y);
+	/*if (target.position.Get_x() == 0 || position.Get_x() == 0) {
+		distance_x *= -1;
+	}
 
-float k(Get_Speed() / (direction.Get_x() + direction.Get_y()));
+	if (target.position.Get_y() == 0 || position.Get_y() == 0) {
+		distance_y *= -1;
+	}*/
 
-position.Set_x(position.Get_x() + k * direction.Get_x());
-position.Set_y(position.Get_y() + k * direction.Get_y());
+	Set_Direction(distance_x, distance_y);
+
+	float k(Get_Speed() / (direction.Get_x() + direction.Get_y())); 
+
+	position.Set_x(position.Get_x() + k * direction.Get_x());
+	position.Set_y(position.Get_y() + k * direction.Get_y());
 
 	std::cout << "Player move to x = " << position.Get_x() << " and y = " << position.Get_y() << std::endl;
 }

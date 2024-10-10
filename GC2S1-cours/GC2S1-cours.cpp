@@ -22,14 +22,24 @@ int main(int argc, const char* argv[]){
 
     bool Dead_Mob(false);
     bool Dead_BreakableObjects(false);
+    bool bStep(false);
 
     World world;
 
     world.Init();
-    while(!Dead_Mob && !Dead_BreakableObjects){
-        world.Step(Dead_Mob, Dead_BreakableObjects);
+    /*while (!bStep)
+    {
+        bStep = world.Step(Dead_Mob, Dead_BreakableObjects);
         std::cout << std::endl;
-    }
+    }*/
+
+    world.Step(Dead_Mob, Dead_BreakableObjects);
+    world.Step(Dead_Mob, Dead_BreakableObjects);
+    world.Step(Dead_Mob, Dead_BreakableObjects);
+
+
+
+    
 
 
     /*while (int i = 0; i < 5; i++) {

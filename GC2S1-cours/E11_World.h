@@ -30,7 +30,7 @@ class World
 public:
 	World();
 	void Init();
-	void Step();
+	void Step(bool, bool);
 
 };
 

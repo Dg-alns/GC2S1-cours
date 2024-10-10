@@ -19,13 +19,23 @@ int main(int argc, const char* argv[]){
     mob.Deplacement(Bobj);
     mob.Deplacement(Bobj);*/
 
+
+    bool Dead_Mob(false);
+    bool Dead_BreakableObjects(false);
+
     World world;
 
     world.Init();
-    for (int i(0); i < 5; i++)
-    {
-        world.Step();
+    while(!Dead_Mob && !Dead_BreakableObjects){
+        world.Step(Dead_Mob, Dead_BreakableObjects);
+        std::cout << std::endl;
     }
+
+
+    /*while (int i = 0; i < 5; i++) {
+        world.Step(Dead_Mob, Dead_BreakableObjects);
+        std::cout << std::endl;
+    }*/
     
 
 

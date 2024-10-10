@@ -22,5 +22,5 @@ void Mob::Deplacement(Entity & target) {
 	position.Set_x(position.Get_x() + k * direction.Get_x());
 	position.Set_y(position.Get_y() + k * direction.Get_y());
 
-	std::cout << "Player move to x = " << position.Get_x() << " and y = " << position.Get_y() << std::endl;
+	std::cout << "Mob move to x = " << position.Get_x() << " and y = " << position.Get_y() << std::endl;
 }

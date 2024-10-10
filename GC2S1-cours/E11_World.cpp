@@ -17,7 +17,7 @@ void World::Init() {
 	vEntity.push_back(player);
 }
 
-void World::Step() {
+void World::Step(bool Dead_Mob, bool Dead_BreakableObjects) {
 	Player* player = nullptr;
 	Mob* mob = nullptr;
 	BreakableObject* breakable = nullptr;
@@ -34,14 +34,43 @@ void World::Step() {
 		}
 	}
 
-	bool Dead_Mob(false);
-	bool Dead_BreakableObjects(false);
-
-	if (!Dead_Mob)
+	if (mob->position.Get_x() == breakable->position.Get_x() and mob->position.Get_y() == breakable->position.Get_y()) {
+		std::cout << "Mob can't move" << std::endl;
+	}
+	else
 	{
 		mob->Deplacement(*breakable);
 	}
 
+	if (!Dead_Mob)
+	{		
+		player->Deplacement(*mob);
+	}
+	else {
+		player->Deplacement(*breakable);
+	}
+
+	/*if (player->position.Get_x() == (mob->position.Get_x() - 1) or player->position.Get_x() == (mob->position.Get_x() + 1)) {
+		if (player->position.Get_y() == (mob->position.Get_y() - 1) or player->position.Get_y() == (mob->position.Get_y() + 1)) {
+			player->Attack(*mob);
+			if (mob->Get_Vie() <= 0) {
+				Dead_Mob = true;
+			}
+		}
+	}*/
+
+	/*if (player->position.Get_x() == (breakable->position.Get_x() - 1) or player->position.Get_x() == (breakable->position.Get_x() + 1)) {
+		if (player->position.Get_y() == (breakable->position.Get_y() - 1) or player->position.Get_y() == (breakable->position.Get_y() + 1)) {
+			player->Attack(*breakable);
+			if (mob->Get_Vie() <= 0) {
+				Dead_BreakableObjects = true;
+			}
+		}
+	}*/
+
+	/*if (Dead_BreakableObjects and Dead_Mob) {
+		std::cout << "Simulation Finished" << std::endl;
+	}*/
 
 
 

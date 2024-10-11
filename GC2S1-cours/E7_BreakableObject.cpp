@@ -6,6 +6,12 @@ BreakableObject::BreakableObject(float _x, float _y, float _max_vie, float _vie)
 }
 
 void BreakableObject::Take_Damadge(float _dmg) {
+	float tmp_vie(Get_Vie());
 	vie -= _dmg;
-	std::cout << "Breakable Object just broke" << std::endl;
+
+	std::cout << "Breakable Object vie: " << tmp_vie << " -> " << Get_Vie() << std::endl;
+
+	if (Get_Vie() <= 0) {
+		std::cout << "Breakable Object just die" << std::endl;
+	}
 }

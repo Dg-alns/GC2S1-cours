@@ -9,7 +9,7 @@ void World::Init() {
 	StaticObject* Sobject = new StaticObject(5, 5);
 	BreakableObject* Bobject = new BreakableObject(0, 0, 1, 1);
 	Mob* mob = new Mob(10, 10, 20, 20, 0, 0, 1);
-	Player* player = new Player(20, 20, 10, 10, 0, 0, 1);
+	Player* player = new Player(20, 20, 10, 10, 0, 0, 2);
 
 	vEntity.push_back(Sobject);
 	vEntity.push_back(Bobject);
@@ -49,7 +49,7 @@ void World::Step() {
 	}
 
 	if (player && mob && breakable) {
-		if (mob->Get_Vie() >= 0)
+		if (mob->Get_Vie() > 0)
 		{
 			if (player->position.Get_x() >= (mob->position.Get_x() - 1) && player->position.Get_x() <= (mob->position.Get_x() + 1)) {
 				if (player->position.Get_y() >= (mob->position.Get_y() - 1) && player->position.Get_y() <= (mob->position.Get_y() + 1)) {
@@ -62,7 +62,7 @@ void World::Step() {
 
 		}
 		else {
-			if (breakable->Get_Vie() >= 0)
+			if (breakable->Get_Vie() > 0)
 			{
 				if (player->position.Get_x() >= (breakable->position.Get_x() - 1) && player->position.Get_x() <= (breakable->position.Get_x() + 1)) {
 					if (player->position.Get_y() >= (breakable->position.Get_y() - 1) && player->position.Get_y() <= (breakable->position.Get_y() + 1)) {

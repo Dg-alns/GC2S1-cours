@@ -6,8 +6,14 @@ Player::Player(float _pos_x, float _pos_y, float _max_vie, float _vie, float _di
 }
 
 void Player::Take_Damadge(float _dmg) {
+	float tmp_vie(Get_Vie());
 	vie -= _dmg;
-	std::cout << "Player just die" << std::endl;
+
+	std::cout << "Player vie: " << tmp_vie << " -> " << Get_Vie() << std::endl;
+
+	if (Get_Vie() <= 0) {
+		std::cout << "Player just die" << std::endl;
+	}
 }
 
 void Player::Deplacement(Entity& target) {
@@ -29,6 +35,6 @@ void Player::Deplacement(Entity& target) {
 }
 
 void Player::Attack(Alive & target) {
-	target.Take_Damadge(10);
 	std::cout << "Player just attacked." << std::endl;
+	target.Take_Damadge(10);
 }

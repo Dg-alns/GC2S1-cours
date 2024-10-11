@@ -6,8 +6,14 @@ Mob::Mob(float _pos_x, float _pos_y, float _max_vie, float _vie, float _dir_x, f
 }
 
 void Mob::Take_Damadge(float _dmg) {
+	float tmp_vie(Get_Vie());
 	vie -= _dmg;
-	std::cout << "Mob just die" << std::endl;
+
+	std::cout << "Mob vie: " << tmp_vie << " -> " << Get_Vie() << std::endl;
+
+	if (Get_Vie() <= 0) {
+		std::cout << "Mob just die" << std::endl;
+	}
 }
 
 

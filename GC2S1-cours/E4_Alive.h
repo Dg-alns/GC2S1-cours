@@ -13,8 +13,8 @@
 
 class Alive
 {
-protected:
 	float max_vie;
+protected:
 	float vie;
 public:
 	Alive(float);
